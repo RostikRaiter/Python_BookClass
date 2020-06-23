@@ -13,8 +13,7 @@ namespace repeated_list
             public Node next;
         };
 
-        /* Function to get the nth node from  
-        the last of a linked list*/
+        
         static int majority(Node head)
         {
             Node p = head;
@@ -24,7 +23,7 @@ namespace repeated_list
             while (p != null)
             {
 
-                // Count all occurrences of p->data 
+                
                 int count = 1;
                 Node q = p.next;
                 while (q != null)
@@ -34,8 +33,7 @@ namespace repeated_list
                     q = q.next;
                 }
 
-                // Update max_count and res if count 
-                // is more than max_count 
+               
                 if (count >= max_count) 
                 {
                     max_count = count;
@@ -49,10 +47,7 @@ namespace repeated_list
             if (Math.Abs(total_count) > max_count / 2)
                 return res;
 
-            // if we reach here it means no 
-            // majority element is present. 
-            // and we assume that all the 
-            // element are positive 
+            
             return -9999999;
         }
 
@@ -66,11 +61,11 @@ namespace repeated_list
             head = head_ref;
         }
 
-        // Driver Code 
+        
         public static void Main(String[] args)
         {
 
-            /* Start with the empty list */
+            
             head = null;
             Console.WriteLine("Write size for array");
             int n = Convert.ToInt32(Console.ReadLine());
