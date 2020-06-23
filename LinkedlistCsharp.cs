@@ -6,7 +6,7 @@ namespace repeated_list
     {
         static Node head;
 
-        /* Link list node */
+        
         public class Node
         {
             public int data;
